@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import StoreProvider from "../store";
+import Counter from "./Counter";
 
 const App = () => {
   return (
-    <div>Hello React</div>
-  )
+    <StoreProvider>
+      <Counter />
+    </StoreProvider>
+  );
 };
 
 export default App;
